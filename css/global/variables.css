@@ -1,0 +1,9 @@
+/* variáveis cor e fonte */
+
+:root{
+    --cor-almwhite:hsl(0, 0%, 98%);
+    --cor-mediugray: hsl(0, 0%, 41%);
+    --cor-almblack: hsl(0, 0%, 8%);
+    --font-global:'Epilogue';
+}
+

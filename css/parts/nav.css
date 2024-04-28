@@ -1,0 +1,184 @@
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--cor-almwhite);
+    font-family: 'Epilogue';
+}
+
+.logo{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu ul,.register ul{
+    display: flex;
+    list-style: none;
+}
+
+/* primeiro dropdown */
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.menu-dropdown{
+    padding: 10px;
+    background-color: var(--cor-almwhite);
+    visibility: hidden;
+    opacity: 0; 
+    position: absolute;
+    top: 42px;
+    right: 20px;
+    z-index: 1;
+    min-width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.534);
+    border-radius: 10px;
+}
+
+.menu-dropdown a{
+    color: var(--cor-mediugray);
+    padding: 0px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-dropdown ul{
+    display: block;
+    margin:0 10px 10px 10px;
+}
+
+.dropdown:hover .menu-dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon1::before{
+    position: relative;
+    top: 18px;
+    content: "";
+    width: 14px;
+    height: 16px;
+    background-image: url(../../images/icon-todo.svg);
+    background-size: contain;
+    display: inline-block;
+}
+
+.icon2::before{
+    position: relative;
+    top: 18px;
+    content: "";
+    width: 14px;
+    height: 16px;
+    background-image: url(../../images/icon-calendar.svg);
+    background-size: contain;
+    display: inline-block;
+}
+
+.icon3::before{
+    position: relative;
+    top: 18px;
+    content: "";
+    width: 14px;
+    height: 16px;
+    background-image: url(../../images/icon-reminders.svg);
+    background-size: contain;
+    display: inline-block;
+}
+
+.icon4::before{
+    position: relative;
+    top: 18px;
+    content: "";
+    width: 14px;
+    height: 16px;
+    background-image: url(../../images/icon-planning.svg);
+    background-size: contain;
+    display: inline-block;
+}
+/*primeiro dropdown*/
+
+
+/*segundo dropdown*/
+.menu-dropdown2{
+    background-color: var(--cor-almwhite);
+    visibility: hidden;
+    opacity: 0; 
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+    min-width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.534);
+    border-radius: 10px;
+}
+
+.menu-dropdown2 a{
+    color: var(--cor-mediugray);
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-dropdown2 ul{
+    display: block;
+}
+
+.dropdown:hover .menu-dropdown2{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*segundo dropdown*/
+.register a {
+    text-decoration: none;
+    margin:0 15px;
+    color: var(--cor-mediugray);
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: var(--cor-mediugray);
+    transition: all 0.3s;
+}
+
+.menu a:hover{
+   color: var(--cor-almblack);
+}
+
+.register a:first-child{
+    transition: all 0.3s;
+}
+
+.register a:first-child:hover{
+    color: var(--cor-almblack);
+}
+
+.regis{
+    border: 1px solid var(--cor-almblack);
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.7;
+    transition: all 0.3s;
+    color: var(--cor-almblack);
+}
+
+.regis:hover{
+    opacity: 2;
+}
+
+.dropdown-btn{
+    padding-bottom: 35px;
+}
+
+.dropdown-btn::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+    background-image: url(../../images/icon-arrow-down.svg);
+    background-size: cover;
+}
